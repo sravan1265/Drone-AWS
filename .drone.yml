@@ -2,6 +2,5 @@ pipeline:
   mynewtask:
     image: redis:latest
     commands: docker build -t redis1:latest
-	#      
     when:
       event: push
