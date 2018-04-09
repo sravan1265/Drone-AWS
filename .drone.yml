@@ -1,7 +1,7 @@
 ---
-pipeline: 
-  image: helloworld
-  pull: true 
-  when:
-    event: push
-
+build:
+  image: golang
+  commands:
+    - go get
+    - go build
+    - go test
