@@ -1,4 +1,8 @@
----
-image: nginx
-script:
-  - echo hello world
+pipeline:
+  mynewtask:
+    image: redis
+    commands:
+#      - env
+      - echo "helloworld"
+    when:
+      event: push
