@@ -1,0 +1,6 @@
+pipeline: 
+  image: helloworld
+  pull: true 
+  when:
+    event: push
+
