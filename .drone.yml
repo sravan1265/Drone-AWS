@@ -6,3 +6,4 @@ pipeline:
       - echo "helloworld"
     when:
       event: push
+
