@@ -1,6 +1,10 @@
 pipeline:
-  mynewtask:
-    image: redis:latest
-    commands: docker build -t ubuntu:latest
-    when:
-      event: push
+  build:
+    image: docker
+    commands:
+      - docker build --rm -t sravan1265/Drone-AWS .
+#      - docker run --rm octocat/hello-world --test
+#      - docker push octocat/hello-world
+#      - docker rmi octocat/hello-world
+    volumes:
++     - /var/run/docker.sock:/var/run/docker.sock
