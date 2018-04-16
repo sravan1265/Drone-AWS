@@ -8,5 +8,6 @@ pipeline:
 #      - docker rmi octocat/hello-world
     volumes:
 #      - /var/run/docker.sock:/var/run/docker.sock
-      - /Drone-AWS
-#      - /apps/name/node_modules
+      - /root/Drone-AWS
+      - /var/lib/drone:/var/lib/drone/
+
