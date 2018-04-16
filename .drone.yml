@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: docker
+    image: ubuntu:14.04
     commands:
       - docker build -t test123 .
 #      - docker run --rm octocat/hello-world --test
