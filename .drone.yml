@@ -2,7 +2,7 @@ pipeline:
   build:
     image: docker
     commands:
-      - docker build --rm -t sravan1265/Drone-AWS .
+      - docker build -t sravan1265/Drone-AWS .
 #      - docker run --rm octocat/hello-world --test
 #      - docker push octocat/hello-world
 #      - docker rmi octocat/hello-world
