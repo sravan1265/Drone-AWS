@@ -6,8 +6,10 @@ pipeline:
 #      - docker run --rm octocat/hello-world --test
 #      - docker push octocat/hello-world
 #      - docker rmi octocat/hello-world
+    mount: [ /drone/monday, /drone/tuesday ]
     volumes:
 #      - /var/run/docker.sock:/var/run/docker.sock
-      - /root/Drone-AWS
-      - /var/lib/drone:/var/lib/drone/
+      -  /tmp/cache:/cache
+#      - /root/Drone-AWS
+#      - /var/lib/drone:/var/lib/drone/
 
