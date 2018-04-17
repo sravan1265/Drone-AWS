@@ -2,7 +2,6 @@ pipeline:
   build:
     image: ubuntu:14.04
     volumes:
-      -  /etc/ssl/certs:/etc/ssl/certs 
-#      - /var/run/docker.sock:/var/run/docker.sock
+      - nix:/nix
     commands:
       - docker build -t test123 .  
