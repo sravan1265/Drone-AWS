@@ -5,5 +5,5 @@ pipeline:
       - docker build -t sravan1265/Drone-AWS .
     volumes:
       - /var/lib/docker/volumes/wednusday:/var/lib/docker/volumes/wednusday
-    when:
-      event: push
+#    when:
+#      event: push
