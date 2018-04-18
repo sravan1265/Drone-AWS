@@ -1,9 +1,9 @@
 pipeline:
   build:
     image: docker
-    commands:
-      - docker build -t sravan1265/Drone-AWS .
+#    commands:
+#      - docker build -t sravan1265/Drone-AWS .
     volumes:
       - /var/lib/docker/volumes/wednusday:/var/lib/docker/volumes/wednusday
-#    when:
-#      event: push
+    commands:
+      - docker build -t sravan1265/Drone-AWS .
