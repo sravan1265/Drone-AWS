@@ -1,3 +1,4 @@
-image: docker
-script:
-  - docker build .
+pipeline:
+  image: docker 
+  commands: 
+    - docker build -t sravan1265/Docker-AWS
