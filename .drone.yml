@@ -1,10 +1,7 @@
 pipeline:
-  build:
-    image: ubuntu:14.04
-    mount: 
-      - node_modules
-    volumes:
-      - /tmp/cache:/cache
-      - nix:/nix
+  mynewtask:
+    image: ubuntu
     commands:
-      - docker build -t test123 .  
+      - echo "helloworld"
+    when:
+      event: push
