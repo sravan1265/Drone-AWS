@@ -1,4 +1,4 @@
 pipeline:
-  image: docker 
+#  image: docker 
   commands: 
-    - docker build -t sravan1265/Docker-AWS
+    - docker build -t sravan1265/Docker-AWS .
