@@ -1,4 +1,9 @@
 pipeline:
-#  image: docker 
-  commands: 
-    - docker build -t sravan1265/Docker-AWS .
+  build:
+    image: docker
+    volumes:
+      db-data:
+        driver: local
+#      - /usr/share/drone:/tmp/drone
+    commands:
+      - docker build -t sravan1265/Drone-AWS .
