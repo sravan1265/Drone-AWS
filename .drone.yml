@@ -1,9 +1,3 @@
-pipeline:
-  build:
-    image: docker
-#    commands:
-#      - docker build -t sravan1265/Drone-AWS .
-    volumes:
-      - /usr/share/drone:/tmp/drone
-    commands:
-      - docker build -t sravan1265/Drone-AWS .
+image: docker
+script:
+  - docker build .
