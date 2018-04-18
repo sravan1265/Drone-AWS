@@ -1,7 +1,9 @@
 pipeline:
-  mynewtask:
-    image: ubuntu
+  build:
+    image: docker
+    volume:
+      - usr/share/drone:/tmp/drone
+#    Dockerfile:
+#      - /home/svcvplatx/dronetestrepo1/Dockerfile
     commands:
-      - echo "helloworld"
-    when:
-      event: push
+      - docker build -t vcx .
