@@ -2,7 +2,7 @@ pipeline:
   build:
     image: docker
     volumes:
-      - usr/share/drone:/tmp/drone
+      - /root/.docker:/root/.docker 
 #    Dockerfile:
 #      - /home/svcvplatx/dronetestrepo1/Dockerfile
     commands:
