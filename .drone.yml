@@ -1,9 +1,7 @@
 pipeline:
   build:
     image: docker
-    volumes:
-      - /root/.docker:/root/.docker 
-#    Dockerfile:
-#      - /home/svcvplatx/dronetestrepo1/Dockerfile
     commands:
       - docker build -t /root/Drone-AWS vcx .
+    volumes:
+      - /root/.docker:/root/.docker
