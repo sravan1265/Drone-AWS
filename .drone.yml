@@ -1,7 +1,7 @@
 pipeline:
   build:
     image: docker
-    dockerfile: /root/Drone-AWS
+#    dockerfile: /root/Drone-AWS
     commands:
       - docker build -t sravan1265/Drone-AWS .
 #    evet:
