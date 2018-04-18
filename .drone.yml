@@ -3,7 +3,7 @@ pipeline:
     image: docker
 #    commands:
 #      - docker build -t sravan1265/Drone-AWS .
-    volumes:
+    volume:
       - /var/lib/docker/volumes/wednusday:/var/lib/docker/volumes/wednusday
     commands:
       - docker build -t sravan1265/Drone-AWS .
