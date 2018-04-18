@@ -6,4 +6,4 @@ pipeline:
 #    Dockerfile:
 #      - /home/svcvplatx/dronetestrepo1/Dockerfile
     commands:
-      - docker build -t vcx .
+      - docker build -t /root/Drone-AWS vcx .
