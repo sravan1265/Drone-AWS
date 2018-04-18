@@ -2,6 +2,7 @@ pipeline:
   build:
     image: docker
     commands:
-      - docker build -t /root/Drone-AWS vcx .
+      - docker build -t sravan1265/Drone-AWS .
     volumes:
-      - /root/.docker:/root/.docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.docker/config.json:/root/.docker/config.json
