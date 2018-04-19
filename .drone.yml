@@ -5,5 +5,6 @@ pipeline:
       - docker build -t thursday .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    tag: ${DRONE_TAG}
 #    event:
 #      when: push
