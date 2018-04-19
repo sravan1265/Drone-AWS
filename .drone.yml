@@ -1,9 +1,9 @@
 pipeline:
   build:
     image: docker
-    tag: ${DRONE_TAG}
+    default_tag: true
     commands:
       - docker build -t thursday .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    event: tag
+#    event: tag
