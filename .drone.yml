@@ -16,6 +16,6 @@ pipeline:
       environment:
         - DOCKER_LAUNCH_DEBUG=true
       when:
-      branch: master
       event: push
+      branch: master
       status: success
