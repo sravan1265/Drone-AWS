@@ -1,15 +1,9 @@
 pipeline:
   build:
-    image: plugins/docker
-#    commands:
-#      - docker build -t aws .
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-#    repo: sravank/vcloudx
-    username: sravank	
-    password: asdfghjkl
-    repo: sravank/vcloudx
-    auto_tag: true
-#    when: 
-#      event: [ tag ] 
-#    auto_tag_suffix: vcloudx
+    image: docker
+    commands: 
+      - docker build -rm -t sravan1265/Drone-AWS .
+#      - docker tag sravan1265/Drone-AWS 
+      - docker push sravan1265/Drone-AWS:vcx-1.0
+  
+        
