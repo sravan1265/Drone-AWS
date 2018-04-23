@@ -1,9 +1,9 @@
 pipeline:
   build:
     image: docker
-    default_tag: true
+#    default_tag: true
     commands:
-      - docker build -t thursday .
+      - docker build -t AWS .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 #    event: tag
