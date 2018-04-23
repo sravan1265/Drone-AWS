@@ -5,5 +5,6 @@ pipeline:
       - docker build -t test123 .
 #      - docker tag sravan1265/Drone-AWS 
       - docker push sravan1265/Drone-AWS:vcx-1.0
-  
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  
         
