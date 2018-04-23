@@ -2,9 +2,9 @@ pipeline:
   build:
     image: docker
     commands: 
-      - docker build -t test123 .
+      - docker build -t sravank/vcloudx .
 #      - docker tag sravan1265/Drone-AWS 
-      - docker push sravank/vcloudx:vcx-1.0
+      - docker push sravank/vcloudx:vcx
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock  
         
