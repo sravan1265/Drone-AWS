@@ -9,5 +9,7 @@ pipeline:
     username: sravank	
     password: asdfghjkl
     repo: sravank/vcloudx
-    auto_tag: true 
+    auto_tag: true
+    when: 
+      event: [ tag ] 
 #    auto_tag_suffix: vcloudx
