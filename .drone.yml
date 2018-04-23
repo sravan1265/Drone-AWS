@@ -1,8 +1,8 @@
 pipeline:
   build:
     image: plugins/docker
-    commands:
-      - docker build -t aws .
+#    commands:
+#      - docker build -t aws .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 #    repo: sravank/vcloudx
