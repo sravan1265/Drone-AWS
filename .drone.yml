@@ -2,7 +2,7 @@ pipeline:
   build:
     image: docker
     commands: 
-      - docker build -t sravan1265/Drone-AWS .
+      - docker build -t test123 .
 #      - docker tag sravan1265/Drone-AWS 
       - docker push sravan1265/Drone-AWS:vcx-1.0
   
