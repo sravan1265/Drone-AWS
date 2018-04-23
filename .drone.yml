@@ -1,21 +1,12 @@
 pipeline:
   build:
-    image: docker
+    image: plugins/docker
     commands:
       - docker build -t aws .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    docker:
-      image: plugins/docker
-      username: sravank	
-      password: asdfghjkl
-      email: ksravanaws@gmail.com
-      registry: registry
-      repo: sravank/vcloudx
-      tag: ${DRONE_TAG}
-      environment:
-        - DOCKER_LAUNCH_DEBUG=true
-      when:
-      event: tag
-      branch: master
-      status: success
+#    repo: sravank/vcloudx
+    username: sravank	
+    password: asdfghjkl
+    repo: sravank/vcloudx
+    
