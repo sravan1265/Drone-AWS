@@ -10,3 +10,4 @@ pipeline:
     password: asdfghjkl
     repo: sravank/vcloudx
     auto_tag: true 
+    auto_tag_suffix: vcloudx
