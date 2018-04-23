@@ -9,4 +9,4 @@ pipeline:
     username: sravank	
     password: asdfghjkl
     repo: sravank/vcloudx
-    
+    auto_tag: true 
